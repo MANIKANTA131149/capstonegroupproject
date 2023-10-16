@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Bro's Exercise's </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+      .body {
+        background-color: bisque;
+      }
+
+      .navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        color: white;
+      }
+
+      .head {
+        color: aliceblue;
+      }
+
+      .li {
+        display: inline;
+        padding: 45px;
+        color: white;
+      }
+
+      .heading2 {
+        background-image: linear-gradient(rgba(146, 99, 71, 0.763), rgb(190, 124, 48));
+        margin-top: -143px;
+        width: 1520px;
+        height: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        font-weight: bolder;
+        color: white;
+        text-align: left;
+
+      }
+
+      .img3 {
+        width: 550px;
+        height: 350px;
+        margin: 3px;
+        margin-left: 100PX;
+        border-radius: 15px;
+        border: 1.5px solid rgba(190, 182, 182, 0.269);
+        z-index: 1;
+      }
+
+      .footer-basic {
+        padding: 40px 0;
+        background-image: linear-gradient(rgb(146, 99, 71), rgb(190, 124, 48));
+        color: #000206ea;
+      }
+
+      .footer-basic ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+
+      .footer-basic li {
+        padding: 0 10px;
+      }
+
+      .footer-basic ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      .footer-basic ul a:hover {
+        opacity: 1;
+      }
+
+      .footer-basic .social {
+        text-align: center;
+        padding-bottom: 25px;
+      }
+
+      .footer-basic .social>a {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #030202;
+        margin: 0 8px;
+        color: inherit;
+        opacity: 0.75;
+      }
+
+      .footer-basic .social>a:hover {
+        opacity: 0.9;
+      }
+
+      .footer-basic .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #040101;
+        margin-bottom: 0;
+      }
+
+      header {
+        background-color: #b1c1cc04;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .search-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #muscle-input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #search-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #search-button:hover {
+        background-color: #555;
+      }
+
+      .results-container {
+        background-color: #f7f7f71b;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        font-size: x-large;
+      }
+
+      .exercise {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #ffffff4b;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        color: black;
+      }
+
+      .exercise {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .exercise:hover {
+        transform: scale(1.02);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        margin-right: 5px;
+      }
+
+      button[type="submit"] {
+        padding: 5px 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table th,
+      table td {
+        padding: 8px;
+        border: 1px solid white;
+      }
+
+      body {
+        background-image: url("http://getwallpapers.com/wallpaper/full/c/b/7/364704.jpg");
+      }
+
+      .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+      }
+
+      .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        margin-left: 90px;
+      }
+
+      #nutritionTable {
+        color: #030303;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body class="body" style="background-image: url('https://img.freepik.com/free-photo/gym-with-barbell-floor-sign-that-says-weight_1340-38220.jpg');  background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="heading2">
+      <ul class="navigation">
+        <li class="li">
+          <a href="/home" class="head" style="cursor: pointer;">HOME</a>
+        </li>
+        </li>
+        <li class="li">
+          <a href="/news" class="head">NEWS</a>
+        </li>
+        <li class="li">
+          <a href="/contact" class="head">CONTACT</a>
+        </li>
+        <li class="li">
+          <a href="https://www.google.com/maps/d/u/0/embed?mid=1FyeSG1oL961oN282hed8OjpK7c2uMLM&ehbc=2E312F" class="head">FIND GYM</a>
+        </li>
+        <li class="li">
+          <a href="/products" class="head">PRODUCTS</a>
+        </li>
+        <li class="li">
+          <a href="/about" class="head" style="cursor: pointer;">ABOUT</a>
+        </li>
+        <li class="li">
+          <a href="/api" class="head" style="cursor: pointer;">EXERCISES</a>
+        </li>
+        <li class="li">
+          <a href="/logout" class="Signup" style="cursor: pointer;">LOGOUT</a>
+        </li>
+      </ul>
+      <br>
+    </div>
+    <br>
+    <br>
+    <h1 style="color: #fff; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Search For A Diet</h1>
+    <div class="div2">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter Food Name" required>
+        <button type="submit">Search</button>
+      </form>
+      <center><table id="nutritionTable" style="color: rgb(213, 213, 217); width: 50%;">
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Calories</th>
+            <th>Protein</th>
+          </tr>
+        </thead>
+        <tbody id="nutritionBody"></tbody>
+      </table>
+    </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#">
+            <i class="icon ion-social-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-snapchat"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-facebook"></i>
+          </a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="copyright">Gym Bro's © 2023</p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const searchForm = document.getElementById("searchForm");
+      const searchInput = document.getElementById("searchInput");
+      const nutritionBody = document.getElementById("nutritionBody");
+      // Load data from local storage on page load
+      loadFromLocalStorage();
+      searchForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const searchQuery = searchInput.value;
+        getData(searchQuery);
+      });
+
+      function getData(searchQuery) {
+        $.ajax({
+          url: `https://api.api-ninjas.com/v1/nutrition?query=${searchQuery}`,
+          headers: {
+            'X-Api-Key': 'g9u7EETX7YYd4uzqrw4sqw==HIL1TZU8AHBPgw7E'
+          },
+          success: function(response) {
+            if (response.length > 0) {
+              response.forEach(function(food) {
+                addRow(food);
+                saveToLocalStorage(food);
+              });
+            } else {
+              displayError();
+            }
+          },
+          error: function() {
+            displayError();
+          }
+        });
+      }
+
+      function addRow(food) {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                
+																												<td>${food.name}</td>
+																												<td>${food.calories}</td>
+																												<td>${food.protein_g}</td>
+            `;
+        nutritionBody.appendChild(row);
+      }
+
+      function saveChanges(row, name, calories, protein) {
+        const nameCell = document.createElement("td");
+        nameCell.textContent = name;
+        const caloriesCell = document.createElement("td");
+        caloriesCell.textContent = calories;
+        const proteinCell = document.createElement("td");
+        proteinCell.textContent = protein;
+        row.innerHTML = "";
+        row.appendChild(nameCell);
+        row.appendChild(caloriesCell);
+        row.appendChild(proteinCell);
+        // Update the data in local storage after saving changes
+        updateLocalStorage();
+      }
+
+      function handleDelete(deleteBtn) {
+        const row = deleteBtn.closest("tr");
+        row.remove();
+        // Remove the data from local storage after deleting the row
+        removeFromLocalStorage(row);
+      }
+
+      function displayError() {
+        nutritionBody.innerHTML = `
+                
+																												<tr>
+																													<td colspan="5">No results found.</td>
+																												</tr>
+            `;
+      }
+
+      function saveToLocalStorage(food) {
+        let nutritionData = JSON.parse(localStorage.getItem('nutritionData')) || [];
+        nutritionData.push(food);
+        localStorage.setItem('nutritionData', JSON.stringify(nutritionData));
+      }
+
+      function loadFromLocalStorage() {
+        let nutritionData = JSON.parse(localStorage.getItem('nutritionData')) || [];
+        nutritionData.forEach(function(food) {
+          addRow(food);
+        });
+      }
+
+      function updateLocalStorage() {
+        let nutritionData = [];
+        const rows = nutritionBody.getElementsByTagName("tr");
+        for (let i = 0; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName("td");
+          const food = {
+            name: cells[0].textContent,
+            calories: cells[1].textContent,
+            protein_g: cells[2].textContent
+          };
+          nutritionData.push(food);
+        }
+        localStorage.setItem('nutritionData', JSON.stringify(nutritionData));
+      }
+
+      function removeFromLocalStorage(row) {
+        let nutritionData = JSON.parse(localStorage.getItem('nutritionData')) || [];
+        const name = row.cells[0].textContent;
+        nutritionData = nutritionData.filter(function(food) {
+          return food.name !== name;
+        });
+        localStorage.setItem('nutritionData', JSON.stringify(nutritionData));
+      }
+    });
+  </script>
+</html>
