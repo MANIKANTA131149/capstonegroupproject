@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="menu.css">
+    <style type="text/css">
+        .footer-basic {
+            padding: 10px 0; /* Reduced footer height */
+            background-image: linear-gradient(rgb(146, 99, 71),rgb(190, 124, 48));
+            color: #fff; /* Changed text color to white */
+        }
+
+        .footer-basic ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .footer-basic li {
+            padding: 0 10px;
+        }
+
+        .footer-basic ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity: 1;
+        }
+
+        .footer-basic .social {
+            text-align: center;
+            padding-bottom: 15px; /* Increased social links padding */
+        }
+
+        .footer-basic .social > a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #030202;
+            margin: 0 10px; /* Increased spacing between social links */
+            color: inherit;
+            opacity: 0.75;
+        }
+
+        .footer-basic .social > a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top: 10px; /* Reduced margin */
+            text-align: center;
+            font-size: 13px;
+            color: #040101;
+            margin-bottom: 0;
+        }
+
+        .logo{
+            width: 100px;
+            border-radius: 50%; /* Apply round border radius */
+        }
+
+        .nav-link-wrapper {
+            font-size: 20px;
+            color: #fff;
+        }
+        .con{
+            color: #fff;
+        }
+        .view{
+            text-align:center;
+            background-color: rgba(255,255,255,0.25);
+            margin-left:300px;
+            margin-right:300px;
+        }
+        .cart-items{
+            background-color: rgba(255,255,255,0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .head {
+        color: aliceblue;
+      }
+
+      .li {
+        display: inline;
+        padding: 50px;
+        color: white;
+      }
+
+      .heading2 {
+        background-image: linear-gradient(rgba(146, 99, 71, 0.763), rgb(190, 124, 48));
+        margin-top: -143px;
+        width: 1520px;
+        height: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        font-weight: bolder;
+        color: white;
+        text-align: left;
+      }
+      .navigation {
+        list-style-type: none;
+        font-size: large;
+        color: white;
+      }
+
+    </style>
+</head>
+<body style="background-image: url(https://img.freepik.com/free-photo/gym-with-barbell-floor-sign-that-says-weight_1340-38220.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <br><br><br><br><br><br>
+    <div class="heading2">
+        <ul class="navigation">
+          <li class="li">
+            <a href="/home" class="head" style="cursor: pointer;">HOME</a>
+          </li>
+          </li>
+          <li class="li">
+            <a href="/news" class="head">NEWS</a>
+          </li>
+          <li class="li">
+            <a href="/contact" class="head">CONTACT</a>
+          </li>
+          <li class="li">
+            <a href="https://www.google.com/maps/d/u/0/embed?mid=1FyeSG1oL961oN282hed8OjpK7c2uMLM&ehbc=2E312F" class="head">FIND GYM</a>
+          </li>
+          
+          <li class="li">
+            <a href="/about" class="head" style="cursor: pointer;">ABOUT</a>
+          </li>
+          <li class="li">
+            <a href="/products" class="head">PRODUCTS</a>
+          </li>
+          <li class="li">
+            <a href="/diet" class="head" style="cursor: pointer;">DIET</a>
+          </li>
+          <li class="li">
+            <a href="/logout" class="head" style="cursor: pointer;">LOGOUT</a>
+          </li>
+        </ul>
+      </div>
+        <div class="container">
+        <center><h1 style="color: #fff; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">All your GYM Products at one place.</h1></center>    
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center" data-price="349">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro1.jpeg?v=1697345624093" alt="">
+                <h5 class="con">Muscle Mass</h5>
+                <p class="con">Rs.349</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div  class="mt-5 col-6 col-md-4 col-lg-3 text-center" data-price="399">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro2.jpeg?v=1697345646824" alt="">
+                <h5 class="con">Caramel Milk Shake</h5>
+                <p class="con">Rs.399</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+           
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro3.jpeg?v=1697345654199" alt="">
+                <h5 class="con">Strawberry Ice Cream Milk</h5>
+                <p class="con">Rs.349</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro4.jpeg?v=1697345661843" alt="">
+                <h5 class="con">Ice Tea</h5>
+                <p class="con">Rs.299</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro5.jpeg?v=1697345666075" alt="">
+                <h5 class="con">Cold coffee</h5>
+                <p class="con">Rs.449</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro6.jpeg?v=1697345671298" alt="">
+                <h5 class="con">Hot Chocolate</h5>
+                <p class="con">Rs.299</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro7.jpeg?v=1697345681744" alt="">
+                <h5 class="con">Cold Brew coffee with Milk</h5>
+                <p class="con">Rs.249</p>
+                <button class="btn btn-info add-to-cart-button" onclick="addToCart('Muscle Mass', 'p1.jpeg', 349)">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+            <div class="mt-5 col-6 col-md-4 col-lg-3 text-center">
+                <div class="product-card">
+                <img class="item" src="https://cdn.glitch.global/df993827-b149-41a1-adfe-73615a55619d/pro8.jpeg?v=1697345687067" alt="">
+                <h5 class="con">Vanilla Sweet Cream Coffee</h5>
+                <p class="con">Rs.399</p>
+                <button class="btn btn-info add-to-cart-button" data-name="Muscle Mass" data-price="349" data-image="p1.jpeg">Add to Cart</button>
+                <button class="btn btn-success buy-button">Buy Now</button></div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <h2 class="view">View Cart</h2>
+        <center><div class="cart-items" style="color: rgb(252, 252, 252); background-color: #04030319; font-weight:800; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        </div></center>
+    </div><br><br>
+    <div class="footer-basic">
+        <footer>
+          <div class="social">
+            <a href="#">
+              <i class="icon ion-social-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="icon ion-social-snapchat"></i>
+            </a>
+            <a href="#">
+              <i class="icon ion-social-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="icon ion-social-facebook"></i>
+            </a>
+          </div>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="copyright">Gym Bro's © 2023</p>
+        </footer>
+    </div>
+    <script>
+    const buyButtons = document.querySelectorAll('.btn.btn-info');
+    const cartItemsDiv = document.querySelector('.cart-items');
+
+    const cartItems = [];
+
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const priceElement = button.parentElement.querySelector('p');
+            const price = parseFloat(priceElement.innerText.replace('Rs.', ''));
+            const itemName = button.parentElement.querySelector('h5').innerText;
+
+            const itemIndex = cartItems.findIndex(item => item.name === itemName);
+
+            if (itemIndex !== -1) {
+                cartItems[itemIndex].quantity += 1;
+            } else {
+                cartItems.push({ name: itemName, price: price, quantity: 1 });
+            }
+
+            updateCart();
+        });
+    });
+
+    function updateCart() {
+        cartItemsDiv.innerHTML = '';
+
+        if (cartItems.length === 0) {
+            cartItemsDiv.innerHTML = '<p>No items in the cart.</p>';
+            return;
+        }
+
+        cartItems.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('cart-item');
+            itemDiv.innerHTML = `
+                <p>${item.name} x ${item.quantity}</p>
+                <p>Rs.${item.price * item.quantity}</p>
+            `;
+            cartItemsDiv.appendChild(itemDiv);
+        });
+    }
+</script>
+</body>
+</html>
