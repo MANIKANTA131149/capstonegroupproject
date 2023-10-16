@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Bro's Exercise's </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+      .body {
+        background-color: bisque;
+      }
+
+      .navigation {
+        list-style-type: none;
+        font-size: large;
+        color: white;
+      }
+
+      .head {
+        color: aliceblue;
+      }
+
+      .li {
+        display: inline;
+        padding: 50px;
+        color: white;
+      }
+
+      .heading2 {
+        background-image: linear-gradient(rgba(146, 99, 71, 0.763), rgb(190, 124, 48));
+        margin-top: -143px;
+        width: 1520px;
+        height: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        font-weight: bolder;
+        color: white;
+        text-align: left;
+        position: fixed;
+      }
+
+      .img3 {
+        width: 550px;
+        height: 350px;
+        margin: 3px;
+        margin-left: 100PX;
+        border-radius: 15px;
+        border: 1.5px solid rgba(190, 182, 182, 0.269);
+        z-index: 1;
+      }
+
+      .footer-basic {
+        padding: 40px 0;
+        background-image: linear-gradient(rgb(146, 99, 71), rgb(190, 124, 48));
+        color: #000206ea;
+      }
+
+      .footer-basic ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+
+      .footer-basic li {
+        padding: 0 10px;
+      }
+
+      .footer-basic ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      .footer-basic ul a:hover {
+        opacity: 1;
+      }
+
+      .footer-basic .social {
+        text-align: center;
+        padding-bottom: 25px;
+      }
+
+      .footer-basic .social>a {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #030202;
+        margin: 0 8px;
+        color: inherit;
+        opacity: 0.75;
+      }
+
+      .footer-basic .social>a:hover {
+        opacity: 0.9;
+      }
+
+      .footer-basic .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #040101;
+        margin-bottom: 0;
+      }
+
+      header {
+        background-color: #b1c1cc04;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .search-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #muscle-input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #search-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #search-button:hover {
+        background-color: #555;
+      }
+
+      .results-container {
+        background-color: #f7f7f71b;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        font-size: x-large;
+      }
+
+      .exercise {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #ffffff4b;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        color: black;
+      }
+
+      .exercise {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .exercise:hover {
+        transform: scale(1.02);
+      }
+      
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ef7c0029;
+  padding: 20px;
+}
+    </style>
+  </head>
+  <body class="body" style="background-image: url('https://img.freepik.com/free-photo/gym-with-barbell-floor-sign-that-says-weight_1340-38220.jpg');  background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="heading2">
+        <ul class="navigation">
+          <li class="li">
+            <a href="/home" class="head" style="cursor: pointer;">HOME</a>
+          </li>
+          </li>
+          <li class="li">
+            <a href="/news" class="head">NEWS</a>
+          </li>
+          <li class="li">
+            <a href="/contact" class="head">CONTACT</a>
+          </li>
+          <li class="li">
+            <a href="https://www.google.com/maps/d/u/0/embed?mid=1FyeSG1oL961oN282hed8OjpK7c2uMLM&ehbc=2E312F" class="head">FIND GYM</a>
+          </li>
+          <li class="li">
+            <a href="" class="head">PRODUCTS</a>
+          </li>
+          <li class="li">
+            <a href="/about" class="head" style="cursor: pointer;">ABOUT</a>
+          </li>
+          <li class="li">
+            <a href="/diet" class="head" style="cursor: pointer;">DIET</a>
+          </li>
+          <li class="li">
+            <a href="/logout" class="head" style="cursor: pointer;">LOGOUT</a>
+          </li>
+        </ul>
+      </div>
+    
+
+<div class="container" style="width: 500px; color: #eae4dd8f;">
+    <h3>Contact Form</h3>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#">
+            <i class="icon ion-social-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-snapchat"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="icon ion-social-facebook"></i>
+          </a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="copyright">Gym Bro's © 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
